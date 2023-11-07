@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+function DrinkPrice(drinkName) {
+  switch (drinkName.toLowerCase()) {
+    case 'water':
+      return 2.0;
+    case 'greentea':
+      return 1.8;
+    case 'icedcoffee':
+      return 3.0;
+    case 'softdrink':
+      return 0.5;
+    default:
+      return 'Drink not found';
+  }
+}
+
+
+const userFavoriteDrink = prompt('Enter your favorite drink:');
+
+
+const price = DrinkPrice(userFavoriteDrink);
+
+
+if (price === 'Drink not found') {
+  console.log(price);
+} else {
+  console.log(`The price of ${userFavoriteDrink} is $${price}`);
+}
+</script>  
+</body>
+</html>

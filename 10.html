@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function canIGetADrivingLicense(age) {
+  if (age >= 20) {
+    return "Yes, you can get a driving license.";
+  } else {
+    const yearsToWait = 20 - age;
+    return `Please come back after ${yearsToWait} years to get one.`;
+  }
+}
+
+// Example usage:
+const userAge = 22;
+const message = canIGetADrivingLicense(userAge);
+
+console.log(message);
+</script>  
+</body>
+</html>

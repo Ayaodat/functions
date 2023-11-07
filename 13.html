@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function shorterString(str1, str2, str3, str4, str5) {
+    const strings = [str1, str2, str3, str4, str5];
+    let shortest = strings[0];
+  
+    for (let i = 1; i < strings.length; i++) {
+      if (strings[i].length < shortest.length) {
+        shortest = strings[i];
+      }
+    }
+  
+    return shortest;
+  }
+  
+  // Example usage:
+  const string1 = "apple";
+  const string2 = "banana";
+  const string3 = "cherry";
+  const string4 = "date";
+  const string5 = "fig";
+  
+  console.log(shorterString(string1, string2, string3, string4, string5));
+
+</script>  
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+
+function ifPandigital(number) {
+    const numberStr = number.toString();
+    const allDigits = '0123456789';
+  
+    for (let digit of allDigits) {
+      if (!numberStr.includes(digit)) {
+        return false;
+      }
+    }
+  
+    return true;
+  }
+  
+  console.log(ifPandigital(1234567890)); 
+  console.log(ifPandigital(9876543210)); 
+  console.log(ifPandigital(123456789));
+</script>  
+</body>
+</html>

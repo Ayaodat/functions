@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function calculateSupply(age, amountPerDay) {
+  const maxAge = 100;
+  const yearsRemaining = maxAge - age;
+  const totalAmountNeeded = yearsRemaining * 365 * amountPerDay;
+  return `You will need ${totalAmountNeeded} to last you until the ripe old age of ${maxAge}.`;
+}
+
+
+const currentAge = 40;
+const amountPerDay = 3;
+const supplyMessage = calculateSupply(currentAge, amountPerDay);
+
+console.log(supplyMessage);
+</script>  
+</body>
+</html>

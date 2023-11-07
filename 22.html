@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function scoreInUniversity(score) {
+  if (score >= 95 && score <= 100) {
+    return 'A';
+  } else if (score >= 85 && score < 95) {
+    return 'B';
+  } else if (score >= 70 && score < 85) {
+    return 'C';
+  } else if (score >= 50 && score < 70) {
+    return 'D';
+  } else if (score >= 0 && score < 50) {
+    return 'F';
+  } else {
+    return 'Invalid score';
+  }
+}
+
+
+const score1 = 94;
+const score2 = 65;
+const score3 = 101;
+
+console.log(scoreInUniversity(score1)); 
+console.log(scoreInUniversity(score2)); 
+console.log(scoreInUniversity(score3));
+</script>  
+</body>
+</html>

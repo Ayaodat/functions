@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function createCounter() {
+  let count = 0;
+  return function () {
+    return count++;
+  };
+}
+
+const counter = createCounter();
+
+function resetCounter() {
+  const previousCount = counter();
+  counter = createCounter(); 
+  return { count: previousCount, message: "Counter reset" };
+}
+
+
+console.log(counter()); 
+console.log(counter()); 
+console.log(resetCounter()); 
+console.log(counter());
+</script>  
+</body>
+</html>

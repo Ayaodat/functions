@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  
+    function area(x, y) {
+  if (x === 0 || y=== 0) {
+    return 0;
+  }
+
+  let result = 0;
+  for (let i = 0; i < Math.abs(y); i++) {
+    result += x;
+  }
+
+ 
+  if ((x < 0 && y > 0) || (x > 0 && y< 0)) {
+    result = -result;
+  }
+
+  return result;
+}
+
+console.log(area(5, 4)); 
+console.log(area(2, 8));
+console.log(area(7, 6)); 
+
+</script>  
+</body>
+</html>

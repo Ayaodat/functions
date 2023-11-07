@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+function longerString(str1, str2, str3, str4) {
+  const strings = [str1, str2, str3, str4];
+  let longest = strings[0];
+
+  for (let i = 1; i < strings.length; i++) {
+    if (strings[i].length > longest.length) {
+      longest = strings[i];
+    }
+  }
+
+  return longest;
+}
+
+
+const string1 = "apple";
+const string2 = "banana";
+const string3 = "cherry";
+const string4 = "date";
+
+console.log(longerString(string1, string2, string3, string4));
+</script>  
+</body>
+</html>
